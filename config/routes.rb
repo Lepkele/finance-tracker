@@ -7,9 +7,11 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   
   root 'welcome#index'
+  get 'my_portfolio', to: 'users#my_portfolio'
+  get 'search_stocks', to: 'stocks#search'
   
-  get 'welcome/index', to: 'welcome#index'
-  get 'welcome/about', to: 'welcome#about'
+ # get 'welcome/index', to: 'welcome#index'
+#  get 'welcome/about', to: 'welcome#about'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
